@@ -14,10 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('/register', ['App\Http\Controllers\API\AuthController', 'register']
-)->name('register');
-Route::post('/login', ['App\Http\Controllers\API\AuthController', 'login'])
-	->name('login');
-Route::middleware(['auth:api','json.response'])->get(
+);
+Route::post('/login', ['App\Http\Controllers\API\AuthController', 'login']);
+Route::get(
 	'/properties',
 	['App\Http\Controllers\API\PropertiesController', 'index']
 );
