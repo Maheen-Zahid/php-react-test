@@ -30,6 +30,6 @@ class Property extends Model {
 	 * @return string
 	 */
 	protected function getFilePathAttribute () {
-		return config('app.url') . '/storage' . $this->image_path;
+		return config('app.url') . '/images' . $this->image_path;
 	}
 }
