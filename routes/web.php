@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//RouteServiceProvider::get('/', function () {
-//    return view('welcome');
-//});
+RouteServiceProvider::get('/', function () {
+    return view('welcome');
+});
